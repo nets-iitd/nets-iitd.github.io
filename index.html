@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>NETS</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body font-family: 'Didact Gothic'>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-md-12 text-center" font-family: 'Didact Gothic'>
+              Neurosurgery Education and Training School- IITD(NETS-IITD) Dataset</br>
+                <small>
+                    2022
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~britty">
+							Britty Baby
+                        </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="http://www.aiimsnets.org/">
+                            Ashish Suri
+                        </a>
+                        </br>AIIMS New Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~suban">
+                            Subhashis Banerjee
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~chetan">
+							Chetan Arora
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" id="header_img" align="middle">
+            <figure class="col-md-6 col-md-offset-3" align="middle">
+            <image src="main/EETS_intro.jpg" class="img-responsive" alt="overview">
+            <figcaption>
+              <b>Figure:</b> Neurosurgery clinical dataset samples.
+            </figcaption>
+            </figure>
+        </div>
+		
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Description
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+				NETS-IITD is the collaboration between Department of Neurosurgery, AIIMS, New Delhi and Department of Computer Science Engineering, IIT Delhi.
+				NETS-IITD contains different types of datasets.
+                1Neuro-EndoTrainer Activity (NETA) Dataset: consists of 144 small videos of experts and trainee neurosurgeons performing the one pick and place activity. 25 videos from this set are randomly selected as a test set for all the experiments.
+                NET Technical skills (NETS) dataset: 75 videos are randomly selected from the NETA dataset and provided for blinded subjective evaluation by an expert neurosurgeon on a scoring scale of 1-10 (1-least, 10-highest) which can be used as the train set for NESE model. The 25 test set videos described earlier are provided for subjective scoring twice at different times. Iteration of scoring is performed on these 25 videos to establish intra-scorer correlation. 
+                NET Event (NETE) Dataset consists of the objective measure of video events manually annotated by an expert on the NETA videos.  It includes per frame identification of hit event, hit intensity (high/low), tugging event, ring drop event, jerk event and an overall smoothness score for the activity.
+                </br>
+                NET Instrument Segmentation (NETIS) Dataset consists of frames extracted from each NETA video at 5 fps and contains annotated instances of the biopsy tool and the rings. This can be used as a dataset for any video instance segmentation problem and can be used to derive the features that determine the efficiency in motion. 
+				</br>
+				EETS Dataset was developed to study the fine-grained version of the instrument segmentation and video instance segmentation problem. This dataset contains 30 videos from Endoscopic Endo-nasal Transsphenoidal Surgery, each composed of 125 frames containing 10 different surgical instruments.
+                20 video sequences make up the training data, and 10 sequences the testing data. The different stages of neuro-endoscopy are considered, including the Sellar stage (Drilling, Navigation, Opening of the dura), Tumor resection stage (Biopsy of a tumor, Tumor removal), and Packing Stage 
+				</br>
+				We acquired data samples from trainees coming for skills training at Neurosurgery Skills Training Facility, AIIMS, New Delhi and clinical data is obtained from the patients at AIIMS, New Delhi (premiere medical institute in India). 
+				The study was approved by the Ethics Committee of AIIMS, New Delhi. We obtained informed trainees at the 
+				time of recruitment, and protect their privacy by fully anonymizing the data.  
+                </p>
+            </div>
+        </div>
+		
+		 <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Labels and Annotations
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+				Each image is labeled as one of the 
+				</br>
+				dfggsfhdgh
+                </p>
+            </div>
+        </div>
+	   
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4> 
+                    Download Dataset
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+				To obtain the dataset, please fill and sign this <a href="site-data/LicenseAgreementGBCU.pdf">License Agreement</a>, and send it to <a href="mailto:surineuro@gmail.com">Dr. Ashish Suri </a> 
+				and <a href="mailto:chetan@cse.iitd.ac.in">Dr. Chetan Arora</a>. 
+				</br>
+				After duly verifying the License Agreement, we will mail the dataset download link to you.
+				</br>
+				Student Researchers must ask their Supervisor/ Head of the Department to fill and send the agreement to us.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    BibTeX (Citation)
+                </h4>
+				If you use NETS for your research, then please cite our paper using the following BibTeX.
+				<pre style="white-space: pre-wrap; background: hsl(220, 50%, 95%); font-size: 12px">
+@InProceedings{xxxxx,
+  title={From Forks to Forceps},
+  author={Britty, Baby, Suri, Ashish, Banerjee, Subhashis and Arora, Chetan}, 
+  booktitle = {MICCAI},
+  pages = {xxx},
+  year={2022}
+}				</pre>
+			</div>
+        </div>
+        <!--div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4 font-family: 'Didact Gothic'>
+                    Acknowledgements
+                </h5>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                This work was supported by ???.
+                </p>
+            </div>
+        </div-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                <center style="font-size:10px"><b>Credits:</b> Template of this webpage from <a href="http://www.mgharbi.com/">
+                    here.
+                </a></center>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
