@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>UCL</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body font-family: 'Didact Gothic'>
+    <div class="container">
+        <div class="row">
+            <h2 class="col-md-12 text-center" font-family: 'Didact Gothic'>
+                Representation Learning Using Rank Loss for Robust Neurosurgical Skills Evaluation
+                </br>
+                <small>
+                    ICIP 2022
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~britty">
+							Britty Baby
+                        </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="mailto:">
+							Mustafa Chasmai
+                        </a>
+                        </br>IIT Delhi
+                    <li>
+                        <a href="mailto:">
+							Tamajit Banerjee
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="mailto:surineuro@gmail.com">
+							Ashish Suri
+                        </a>
+                      </br>AIIMS New Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~suban">
+							Subhashis Banerjee
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~chetan">
+							Chetan Arora
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" align="middle">
+            <div class="btn-group" role="group" aria-label="Top menu" align="middle">
+                <a class="btn btn-primary" href="https://arxiv.org/">Paper</a>
+                <a class="btn btn-primary" href="https://github.com/">Code</a>
+                <a class="btn btn-primary" href="https://gbc-iitd.github.io/data/gbusv">Dataset</a>
+            </div>
+        </div>
+        
+        <br><br>
+
+        <div class="row" id="header_img" align="middle">
+            <image src="nets-data/teaser-nets.png" class="img-responsive" alt="overview" width="700px">
+        </div>
+		
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Abstract
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                    Surgical simulators provide hands-on training and learning of the necessary psychomotor skills. 
+                    Automated skill evaluation of the trainee doctors based on the video of a task being performed by 
+                    them is an important key step for the optimal utilization of such simulators. However, current skill 
+                    evaluation techniques require accurate tracking information of the instruments which restricts their 
+                    applicability to robot assisted surgeries only. In this paper, we propose a novel neural network 
+                    architecture that can perform skill evaluation using video data alone (and no tracking information). 
+                    Given the small dataset available for training such a system, the network trained using L2 regression 
+                    loss easily overfits the training data. We propose a novel rank loss to help learn robust representation, 
+                    leading to 5% improvement for skill score prediction on the benchmark JIGSAWS dataset. To demonstrate 
+                    the applicability of our method on non-robotic surgeries, we contribute a new neuro-endoscopic technical skills 
+                    (NETS) training dataset comprising of 100 short videos of 12 subjects. Our method achieved 27% improvement over 
+                    the state of the art on the NETS dataset.
+                </p>
+            </div>
+        </div>
+		
+		 <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Key Results
+                </h4>
+                
+                <div class="row" id="result_img" align="middle">
+                    <image src="nets-data/key-result.png" class="img-responsive" alt="results" width="600px">
+                </div>
+		
+            </div>
+        </div>
+	   
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    BibTeX (Citation)
+                </h4>
+				<pre style="white-space: pre-wrap; background: hsl(220, 50%, 95%); font-size: 11px">
+                    @inproceedings{xiang2018s3d,
+                        title={S3d: Stacking segmental p3d for action quality assessment},
+                        author={Baby, Britty and Chasmai, Mustafa and Banerjee, Tamajit and Suri, Ashish and Banerjee, Subhashis, and Arora, Chetan},
+                        booktitle={2022 29th IEEE International conference on image processing (ICIP)},
+                        pages={xxx},
+                        year={2022},
+                        organization={IEEE}
+                      }			
+                </pre>
+			</div>
+        </div>
+        <!--div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4 font-family: 'Didact Gothic'>
+                    Acknowledgements
+                </h5>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                This work was supported by ???.
+                </p>
+            </div>
+        </div-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                <center style="font-size:10px"><b>Credits:</b> Template of this webpage from <a href="http://www.mgharbi.com/">
+                    here.
+                </a></center>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
