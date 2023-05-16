@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>NETS</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body font-family: 'Didact Gothic'>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-md-12 text-center" font-family: 'Didact Gothic'>
+                Neuroendoscopic Technical Skills (NETS) Training Dataset</br>
+                <small>
+                    2022
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~britty">
+							Britty Baby
+                        </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="http://www.aiimsnets.org/">
+                            Ashish Suri
+                        </a>
+                        </br>AIIMS New Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~suban">
+                            Subhashis Banerjee
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~chetan">
+							Chetan Arora
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" id="header_img" align="middle">
+            <figure class="col-md-6 col-md-offset-3" align="middle">
+            <image src="NETS_sample.png" class="img-responsive" alt="overview">
+            <figcaption>
+              <b>Figure:</b> Neuroendoscopy Technical Skills Training Dataset samples obtained from NeuroEndoscopic Box Trainer
+            </figcaption>
+            </figure>
+        </div>
+		
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Description
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                Neuro-endoscopic technical skills (NETS) training dataset is obtained from Neuro-endoscope box trainer, 
+                which is a box trainer used for imparting neuro-endoscopic skills. The activity performed on the trainer 
+                includes transferring 6 rings in a pre-defined manner using a biopsy forceps and endoscope. The activity 
+                of ring transfer is recorded by an auxiliary camera placed on the top of the trainer at 25 fps. T
+                he whole activity is split into small videos or surgemes containing one ring transfer per video 
+                (approach, grasp, transfer and retract) and is used for evaluation. The videos were obtained from 6 
+                neuro-endoscopic experts and 6 trainees with experience of > 10 and < 1 years respectively and were 
+                divided into 100 surgemes. All 100 short videos were given for blinded subjective evaluation by an expert neurosurgeon o
+                n a scoring scale of 1-10 (1-least, 10-highest). 
+                25 videos from this set are randomly selected as a test set and evaluated again at a later point in time to find intra-rater correlation.
+                </p>
+            </div>
+        </div>
+		
+<!-- 		 <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Labels and Annotations
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+				Each image is labeled as one of the 
+				</br>
+				dfggsfhdgh
+                </p>
+            </div>
+        </div>
+	    -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4> 
+                    Download Dataset
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+				To obtain the dataset, please fill and sign this <a href="LicenseAgreement_NETS.pdf">License Agreement</a>, and send it to <a href="mailto:surineuro@gmail.com">Dr. Ashish Suri </a> 
+				and <a href="mailto:chetan@cse.iitd.ac.in">Dr. Chetan Arora</a>. 
+				</br>
+				After duly verifying the License Agreement, we will mail the dataset download link to you.
+				</br>
+				Student Researchers must ask their Supervisor/ Head of the Department to fill and send the agreement to us.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    BibTeX (Citation)
+                </h4>
+				If you use NETS for your research, then please cite our paper using the following BibTeX.
+				<pre style="white-space: pre-wrap; background: hsl(220, 50%, 95%); font-size: 12px">
+                    @inproceedings{xiang2018s3d,
+                        title={S3d: Stacking segmental p3d for action quality assessment},
+                        author={Baby, Britty and Chasmai, Mustafa and Banerjee, Tamajit and Suri, Ashish and Banerjee, Subhashis, and Arora, Chetan},
+                        booktitle={2022 29th IEEE International conference on image processing (ICIP)},
+                        pages={xxx},
+                        year={2022},
+                        organization={IEEE}
+                      }					</pre>
+			</div>
+        </div>
+        <!--div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4 font-family: 'Didact Gothic'>
+                    Acknowledgements
+                </h5>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                This work was supported by ???.
+                </p>
+            </div>
+        </div-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                <center style="font-size:10px"><b>Credits:</b> Template of this webpage from <a href="http://www.mgharbi.com/">
+                    here.
+                </a></center>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
